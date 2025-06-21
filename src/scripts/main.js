@@ -3,7 +3,7 @@
 // write code here
 const inputs = document.getElementsByTagName('input');
 
-inputs.forEach((input, inputIndex) => {
+[...inputs].forEach((input, inputIndex) => {
   if (!input.id) {
     input.id = `${input.name}-${inputIndex}`;
   }
